@@ -114,7 +114,7 @@ def fetch_state_list(df,case,state):
 
 def fetch_year_wise(df,yr):
     if yr=='Overall':
-        tmp_df=state_wise(df)
+        tmp_df=state_wise(df).reset_index(drop=True)
         plt.plot()
     else:
         tmp_df=state_wise(df)
